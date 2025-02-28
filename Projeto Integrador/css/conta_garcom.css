@@ -30,13 +30,13 @@ h1, h2 {
 }
 
 /* Estilização dos botões de mesas livres (azul) */
-.btn.livre {
+.btn.primary {
     background-color: blue;
     border: none;
 }
 
 /* Estilização dos botões de mesas ocupadas (vermelho) */
-.btn.ocupado {
+.btn.danger {
     background-color: red;
     border: none;
 }
