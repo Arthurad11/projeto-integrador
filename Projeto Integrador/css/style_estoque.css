@@ -1,0 +1,42 @@
+/* Importação de Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Estilos Globais */
+body {
+    background: linear-gradient(to bottom, #4a2c2a, #121a1e), url('../img/css.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F8F8FF;
+    font-family: "Open Sans", serif;
+    margin: 0;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+
+/* Seção de Display */
+.display {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding: 0;
+}
+
+footer{
+    border-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: #121a1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0px 0px 9px 0px #121a1e;
+}

@@ -1,0 +1,137 @@
+/* Importação de Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Estilos Globais */
+body {
+    background: linear-gradient(to bottom, #4a2c2a, #121a1e), url('../img/css.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F8F8FF;
+    font-family: "Open Sans", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+
+/* Seção de Display */
+.display {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 0;
+}
+
+/* Gráficos */
+.graphic {
+    border-radius: 9px;
+}
+
+.graphic p {
+    text-align: left;
+}
+
+
+/* Conteúdo Principal */
+.conteudoPrincipal{
+    display: flex;
+    flex-direction: column;
+    gap: 5%; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    padding: 3%;
+    background-color: #f3f3f3;
+    color: #121a1e;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px 0px #ffffff;
+}
+
+
+
+/* Seção de Beer */
+.beer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50%;
+}
+
+
+/* Menu do cartões */
+.bg_menu {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+    gap: 15px;
+    margin-top: 2%;
+    color: #121a1e;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px 0px #ffffff;
+}
+/* Cartões */
+.card {
+    margin-top: 3%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;    
+    background-color: #fdfdfd;
+    border-radius: 9px;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgb(53, 53, 53);
+    cursor: pointer;
+    padding: 12%;;
+}
+
+
+.bgb_graphix {
+    display: flex;
+    flex-direction: column;
+    gap: 5%; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    padding: 3%;
+    background-color: #f3f3f3;
+    color: #121a1e;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0px 0px 9px 0px #121a1e;
+    box-shadow: 2px 2px 2px 0px #ffffff;
+}
+
+/* Menu de Gráficos */
+.menu_graphicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 3%;
+}
+
+
+footer{
+    border-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: #121a1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0px 0px 9px 0px #121a1e;
+}
