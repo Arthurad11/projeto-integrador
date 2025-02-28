@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque - Buteco do João</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/script_alterar_estoque.js"></script>
+  <link rel="stylesheet" href="css/style_m.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">🍺 BUTECO DO JOÃO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Estoque</a></li>
+          </ul>
+          <form class="d-flex mt-3">
+            <input class="form-control me-2" type="search" placeholder="Buscar">
+            <button class="btn btn-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <div class="container mt-5 pt-5">
+    <h2 class="mb-3">Estoque</h2>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Unidade</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cerveja</td>
+            <td>50</td>
+            <td>Garrafa</td>
+            <td>
+              <button class="btn btn-warning btn-sm edit-btn" data-bs-toggle="modal"
+                data-bs-target="#editModal">Editar</button>
+              <button class="btn btn-danger btn-sm">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Refrigerante</td>
+            <td>30</td>
+            <td>Lata</td>
+            <td>
+              <button class="btn btn-warning btn-sm edit-btn" data-bs-toggle="modal"
+                data-bs-target="#editModal">Editar</button>
+              <button class="btn btn-danger btn-sm">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Vodka</td>
+            <td>10</td>
+            <td>Garrafa</td>
+            <td>
+              <button class="btn btn-warning btn-sm edit-btn" data-bs-toggle="modal"
+                data-bs-target="#editModal">Editar</button>
+              <button class="btn btn-danger btn-sm">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Gelo</td>
+            <td>100</td>
+            <td>Kg</td>
+            <td>
+              <button class="btn btn-warning btn-sm edit-btn" data-bs-toggle="modal"
+                data-bs-target="#editModal">Editar</button>
+              <button class="btn btn-danger btn-sm">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Amendoim</td>
+            <td>20</td>
+            <td>Pote</td>
+            <td>
+              <button class="btn btn-warning btn-sm edit-btn" data-bs-toggle="modal"
+                data-bs-target="#editModal">Editar</button>
+              <button class="btn btn-danger btn-sm">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-primary" type="submit">SALVAR</button>
+    </div>
+  </div>
+
+  <!-- MODAL DE EDIÇÃO -->
+  <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editModalLabel">Editar Item</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editForm">
+            <div class="mb-3">
+              <label for="editNome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="editNome">
+            </div>
+            <div class="mb-3">
+              <label for="editQuantidade" class="form-label">Quantidade</label>
+              <input type="number" class="form-control" id="editQuantidade">
+            </div>
+            <div class="mb-3">
+              <label for="editUnidade" class="form-label">Unidade de Medida</label>
+              <input type="text" class="form-control" id="editUnidade">
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

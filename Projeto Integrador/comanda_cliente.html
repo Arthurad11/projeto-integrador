@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comanda eletronica</title>
+  <link rel="stylesheet" href="comanda.css">
+
+    <script>
+        function calcularTotal() {
+            let total = 0;
+            document.querySelectorAll('input[type="checkbox"]:checked').forEach(item => {
+                total += parseFloat(item.value);
+            });
+            document.getElementById('total').innerText = "Total: R$ " + total.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Comanda 🍺Boteco do João</h1>
+        <h2>Novo Pedido - Mesa 7</h2>
+        <br/>
+        <br/>
+
+
+        <h3>Promoção do Dia</h3>
+        <br/>
+        
+        
+        <div class="item"><input type="checkbox" value="45" onclick="calcularTotal()"> Combo 3 - R$ 45,00</div>
+        <br/>
+        <br/>
+        
+        
+        <h3>Bebidas</h3>
+        <br/>
+        
+        <div class="item"><input type="checkbox" value="8" onclick="calcularTotal()"> Cerveja Long Neck - R$ 8,00</div>
+        <br/>
+        <br/>
+        
+        <h3>Espetinhos</h3>
+        <br/>
+        <br/>
+        
+        <div class="item"><input type="checkbox" value="9" onclick="calcularTotal()"> Espetinho de Frango - R$ 9,00</div>
+        <br/>
+
+        <h3>Acompanhamentos</h3>
+        <br/>
+        <br/>
+
+        <div class="item"><input type="checkbox" value="18" onclick="calcularTotal()"> Porção de Batata Frita - R$ 18,00</div>
+        <br/>
+        
+        
+        <h3 id="total">Total: R$ 0,00</h3>
+        <button type="button" class="btnexcluir">Excluir</button>
+        <button type="button" class="btn">Finalizar Comanda</button>
+
+        
+    </div>
+</body>
+</html>
