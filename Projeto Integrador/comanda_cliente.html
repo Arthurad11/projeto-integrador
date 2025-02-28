@@ -2,57 +2,70 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Importação do Bootstrap para estilização e funcionalidades -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    
     <meta charset="UTF-8">
+
+    <!-- Configuração para tornar o site responsivo em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página exibido na aba do navegador -->
     <title>Comanda eletronica</title>
+
+    <!-- Importação de um arquivo CSS personalizado para estilização adicional -->
     <link rel="stylesheet" href="css/comanda.css">
-
-
 </head>
 
 <body>
+    <!-- Contêiner principal que agrupa os elementos da comanda -->
     <div class="container">
+        <!-- Título da comanda com nome do estabelecimento -->
         <h1>Comanda 🍺Boteco do João</h1>
+
+        <!-- Subtítulo informando a mesa do pedido -->
         <h2>Novo Pedido - Mesa 7</h2>
-        <br />
-        <br />
 
+        <br/>
 
+        <!-- Seção de promoção do dia -->
         <h3>Promoção do Dia</h3>
-        <br />
 
+        <!-- Item promocional com checkbox para seleção -->
+        <div class="item">
+            <input type="checkbox" value="45" onclick="calcularTotal()"> Combo 3 - R$ 45,00
+        </div>
 
-        <div class="item"><input type="checkbox" value="45" onclick="calcularTotal()"> Combo 3 - R$ 45,00</div>
-        <br />
-        <br />
-
-
+        <!-- Seção de bebidas -->
         <h3>Bebidas</h3>
-        <br />
 
-        <div class="item"><input type="checkbox" value="8" onclick="calcularTotal()"> Cerveja Long Neck - R$ 8,00</div>
-        <br />
-        <br />
+        <!-- Item de bebida com checkbox -->
+        <div class="item">
+            <input type="checkbox" value="8" onclick="calcularTotal()"> Cerveja Long Neck - R$ 8,00
+        </div>
 
+        <!-- Seção de espetinhos -->
         <h3>Espetinhos</h3>
-        <br />
-        <br />
 
-        <div class="item"><input type="checkbox" value="9" onclick="calcularTotal()"> Espetinho de Frango - R$ 9,00
+        <!-- Item de espetinho com checkbox -->
+        <div class="item">
+            <input type="checkbox" value="9" onclick="calcularTotal()"> Espetinho de Frango - R$ 9,00
         </div>
-        <br />
 
+        <!-- Seção de acompanhamentos -->
         <h3>Acompanhamentos</h3>
-        <br />
-        <br />
 
-        <div class="item"><input type="checkbox" value="18" onclick="calcularTotal()"> Porção de Batata Frita - R$ 18,00
+        <!-- Item de acompanhamento com checkbox -->
+        <div class="item">
+            <input type="checkbox" value="18" onclick="calcularTotal()"> Porção de Batata Frita - R$ 18,00
         </div>
-        <br />
 
+        <!-- Exibição do total do pedido -->
         <label id="total">Total: R$ 0,00</label>
+
+        <!-- Botões para excluir ou finalizar a comanda -->
         <div class="grid_buttons">
             <button type="button" class="btnexcluir">Excluir</button>
             <button type="button" class="btn">Finalizar Comanda</button>
