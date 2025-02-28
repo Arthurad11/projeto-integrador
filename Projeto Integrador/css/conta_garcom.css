@@ -1,0 +1,55 @@
+
+body {
+    background-color: #4f4f4f; /* Cinza escuro */
+    color: #f8f8ff; /* Branco azulado */
+    font-family: 'Open Sans', sans-serif; /*fonte*/
+    text-align: center;
+}
+
+/* Estiliza o container principal */
+.container {
+    max-width: 800px; /* Define a largura máxima */
+    margin: 20px auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background: #333; /* Fundo escuro */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Define a cor dos títulos */
+h1, h2 {
+    color: #f8f8ff; /* Branco azulado */
+}
+
+/* Configurações padrão para botões */
+.btn { 
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa a fonte em negrito */
+    padding: 15px; /* Adiciona espaçamento interno */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+/* Estilização dos botões de mesas livres (azul) */
+.btn.livre {
+    background-color: blue;
+    border: none;
+}
+
+/* Estilização dos botões de mesas ocupadas (vermelho) */
+.btn.ocupado {
+    background-color: red;
+    border: none;
+}
+
+/* Estilização do botão de finalizar comanda (verde) */
+.btn-success {
+    background-color: green;
+    border: none;
+}
+
+/* Estilização do seletor de mesas */
+.form-select {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+}
