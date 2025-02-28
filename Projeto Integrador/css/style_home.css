@@ -101,10 +101,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5%; 
-    justify-content: center;
-    align-items: center;
     margin-top: 3%;
-    padding: 3%;
+    padding: 6%;
     background-color: #f3f3f3;
     color: #121a1e;
     border: none;
@@ -117,8 +115,9 @@ body {
 .menu_graphicos {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 15px;
+    padding: 6%;
     margin-top: 3%;
 }
 
