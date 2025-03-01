@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <link rel="stylesheet" href="conta_garcom.css">
+    <title>Painel do Garçom</title>
 
-</head>
-<body>
+    <!--Bootsrtap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Importação do JavaScript personalizado -->
+    <script src="js/conta_garcom.js"></script>
     
+    <!-- Importação do CSS personalizado -->
+    <link rel="stylesheet" href="css/conta_garcom.css">
+</head>
+
+<body class="bg-dark text-light text-center">
+    <!-- Container principal da página -->
+    <div class="container mt-5">
+        <h1 class="mb-4">🍻Painel do Garçom🍻</h1>
+        <h2 class="mb-4">Selecione uma Mesa</h2>
+
+        <!-- Linha para exibição dos botões das mesas -->
+        <div class="row justify-content-center">
+            <!-- Botão para a Mesa 1 (Livre) -->
+            <div class="col-md-3">
+                <button class="btn btn-primary w-100 p-3 mb-3" onclick="visualizarPedido(1)">
+                    Mesa 1 (Livre)
+                </button>
+            </div>
+
+            <!-- Botão para a Mesa 2 (Ocupada) -->
+            <div class="col-md-3">
+                <button class="btn btn-danger w-100 p-3 mb-3" onclick="visualizarPedido(2)">
+                    Mesa 2 (Ocupada)
+                </button>
+            </div>
+
+            <!-- Botão para a Mesa 3 (Livre) -->
+            <div class="col-md-3">
+                <button class="btn btn-primary w-100 p-3 mb-3" onclick="visualizarPedido(3)">
+                    Mesa 3 (Livre)
+                </button>
+            </div>
+        </div>
+
+        <!-- Linha para selecionar a mesa e finalizar a comanda -->
+        <div class="row justify-content-center mt-4">
+            <!-- Select para escolher a mesa -->
+            <div class="col-md-4">
+                <select id="mesaSelect" class="form-select">
+                    <option value="" selected>Escolha uma mesa</option>
+                    <option value="1">Mesa 1</option>
+                    <option value="2">Mesa 2</option>
+                    <option value="3">Mesa 3</option>
+                </select>
+            </div>
+
+            <!-- Botão para finalizar a comanda da mesa selecionada -->
+            <div class="col-md-3">
+                <button class="btn btn-success w-100 p-3" onclick="finalizarComanda()">
+                    Finalizar Comanda
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

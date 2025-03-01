@@ -1,0 +1,134 @@
+
+        body {
+            background: #4f4f4f;
+            color: #f8f8ff;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #f8f8ff;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #f8f8ff;
+        }
+        .btn {
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btnexcluir{
+            background: #f31201;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+
+        }
+    
+
+    /* Resetando as margens e o padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o corpo da página */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #4f4f4f;
+    color: #f8f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Contêiner principal da comanda */
+.comanda-container {
+    background-color: #2c2c2c;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o cabeçalho */
+.header h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#cliente-info {
+    text-align: center;
+    font-size: 18px;
+    color: #0043fc;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a promoção do dia */
+.promocao h2 {
+    font-size: 22px;
+    color: #0043fc;
+    margin-bottom: 10px;
+}
+
+.promocao p {
+    font-size: 18px;
+    color: #f8f8ff;
+}
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    .comanda-container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .promocao h2 {
+        font-size: 20px;
+    }
+
+    .menu h2 {
+        font-size: 20px;
+    }
+
+    .pedido h2 {
+        font-size: 18px;
+    }
+
+    .finalizar {
+        font-size: 16px;
+    }
+}
+
+
+.grid_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
