@@ -123,7 +123,8 @@ body {
 
 
 footer{
-    border-top: 3%;
+    border-top: 100%;
+    border-bottom: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
